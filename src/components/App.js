@@ -38,7 +38,7 @@ class App extends Component {
   }
 
   render() {
-    const cities = this.citylist.filter((item) => item.country ==='india')
+    const cities = this.citylist.filter((item) => item.country ==='India')
     return (
       <div id="main">
         <ol>
