@@ -34,16 +34,16 @@ class App extends Component {
     { name: 'Mussoorie', country: 'India' },
     { name: 'Mount Abu', country: 'India' },
     { name: 'Tirupati', country: 'India' },
-    ]
+    ];
   }
 
   render() {
-    const cities = this.citylist.filter((item) => item.country ==='India')
+    const cities = this.citylist.filter((item) => item.country ==='India');
     return (
       <div id="main">
         <ol>
           {cities.map((item, index) => (
-            <li key={`location${index+1}`}>{item.name}</li>
+            <li key={`location${index + 1}`}>{item.name}</li>
           ))}
         </ol>
       </div>
