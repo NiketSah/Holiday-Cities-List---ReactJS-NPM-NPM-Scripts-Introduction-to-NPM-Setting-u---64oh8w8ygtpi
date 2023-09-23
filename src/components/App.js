@@ -41,6 +41,14 @@ class App extends Component {
     return (
       <div id="main">
         {/* Do not remove the main div */}
+      {/* Display the list of Indian cities */}
+        <h1>Welcome to Our Domestic Tourism Promotion</h1>
+        <h2>Explore these Indian cities:</h2>
+        <ol>
+          {this.cityList.map((city, index) => (
+            <li key={index}>{city.name}</li>
+          ))}
+        </ol>
       </div>
     )
   }
